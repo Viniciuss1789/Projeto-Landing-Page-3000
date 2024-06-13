@@ -4,6 +4,9 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -22,10 +25,6 @@ nav ul {
     padding: 0;
     margin: 0;
     width: 50%;
-}
-
-nav li {
-    background-color: rgb(207, 207, 207);
 }
 
 nav a {
@@ -56,13 +55,13 @@ footer {
     padding: 20px;
     background-color: rgb(60, 60, 60);
     color: white;
-    position: relative;
     width: 100%;
+    margin-top: auto;
 }
 
 @media (max-width: 800px) {
     .produto img {
-        width: 100%;
+        width: 90%;
     }
 
     nav ul {
@@ -71,6 +70,10 @@ footer {
     }
 
     nav a {
+        margin: 10px 0;
+    }
+    
+    nav li {
         margin: 10px 0;
     }
 }
